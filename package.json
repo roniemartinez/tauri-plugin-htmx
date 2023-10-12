@@ -1,0 +1,9 @@
+{
+  "name": "tauri-plugin-htmx",
+  "version": "0.1.0",
+  "description": "htmx plugin for Tauri",
+  "main": "tauri-plugin-htmx.js",
+  "repository": "https://github.com/roniemartinez/tauri-plugin-htmx",
+  "author": "Ronie Martinez <ronmarti18@gmail.com>",
+  "license": "MIT"
+}
