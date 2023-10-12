@@ -252,10 +252,10 @@ source-map-js@^1.0.2:
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
 
-tauri-plugin-htmx@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/tauri-plugin-htmx/-/tauri-plugin-htmx-0.3.0.tgz#416434bbaca3edfdf3eade2affa0cd88ab2acde6"
-  integrity sha512-saP3DC5KhAUtPOILHrGd/9hqYkwmU9uUMbCWGpCrQVxYAtTDTN2XwOAAtsXhTO5JFDPfv5c7KGMpkC8M1UasOQ==
+tauri-plugin-htmx@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/tauri-plugin-htmx/-/tauri-plugin-htmx-0.5.0.tgz#b643655ebc3a5f7c89151d2a33428cf94c07a59b"
+  integrity sha512-m6Ft4UhFcf4VMqOijtVj7AcO+378GmSz8NJjyb5Cal3MjhbyT0v1Gu7a2DgY5JSUu+N67NFp6AGrKBWUYCQqzA==
 
 typescript@^5.0.2:
   version "5.2.2"
