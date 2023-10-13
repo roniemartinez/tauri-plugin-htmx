@@ -44,10 +44,10 @@
       <p>Click on the Tauri logo to learn more about the framework</p>
 
       <!-- Modified for htmx -->
-      <form class="row" id="greet-form">
+      <div class="row">
         <input id="greet-input" name="name" placeholder="Enter a name..." />
         <button hx-post="command:greet" hx-include="[name='name']" hx-trigger="click" hx-target="#greet-msg" hx-swap="innerHTML">Greet</button>
-      </form>
+      </div>
       <!-- End -->
 
       <p id="greet-msg"></p>
