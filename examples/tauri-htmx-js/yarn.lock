@@ -73,7 +73,7 @@ htmx.org@^1.9.6:
   resolved "https://registry.yarnpkg.com/htmx.org/-/htmx.org-1.9.6.tgz#ed8f1f62e28699be21cbf97a161329c93595635d"
   integrity sha512-4Zebo9nzg8u2ZHuIJmvB/nQS6kIMLIoEfhTg/oRwyCIJhL5MLA/jPU1EPEBtGOmG4ZG0k05Vpd3sab2+zfvteQ==
 
-tauri-plugin-htmx@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/tauri-plugin-htmx/-/tauri-plugin-htmx-0.5.0.tgz#b643655ebc3a5f7c89151d2a33428cf94c07a59b"
-  integrity sha512-m6Ft4UhFcf4VMqOijtVj7AcO+378GmSz8NJjyb5Cal3MjhbyT0v1Gu7a2DgY5JSUu+N67NFp6AGrKBWUYCQqzA==
+tauri-plugin-htmx@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/tauri-plugin-htmx/-/tauri-plugin-htmx-0.6.0.tgz#804e8b5dd870cedd3f95221cf16b8c0bc156c203"
+  integrity sha512-2ktNk0DJud5wEub+ax8jp+QY4l4e4N5MUapzX63I7WLnKD8wFos+xR2jmdF8JYyR8nGHOJYj+KEVvn6yx2PMuA==
