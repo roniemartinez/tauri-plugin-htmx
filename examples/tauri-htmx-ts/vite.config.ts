@@ -6,12 +6,12 @@ export default defineConfig(async () => ({
   //
   // 1. prevent vite from obscuring rust errors
   clearScreen: false,
-  // 2. tauri expects a fixed port, fail if that port is not available
+  // 2. Tauri expects a fixed port, fail if that port is not available
   server: {
     port: 1420,
     strictPort: true,
   },
-  // 3. to make use of `TAURI_DEBUG` and other env variables
+  // 3. to access the Tauri environment variables set by the CLI with information about the current target
   // https://tauri.studio/v1/api/config#buildconfig.beforedevcommand
-  envPrefix: ["VITE_", "TAURI_"],
+  envPrefix: ["VITE_", "TAURI_PLATFORM", "TAURI_ARCH", "TAURI_FAMILY", "TAURI_PLATFORM_VERSION", "TAURI_PLATFORM_TYPE", "TAURI_DEBUG"],
 }));
