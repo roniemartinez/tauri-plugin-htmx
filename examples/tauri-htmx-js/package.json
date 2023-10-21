@@ -12,6 +12,6 @@
   },
   "dependencies": {
     "htmx.org": "^1.9.6",
-    "tauri-plugin-htmx": "^0.6.0"
+    "tauri-plugin-htmx": "^1.0.0"
   }
 }
