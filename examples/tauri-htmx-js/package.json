@@ -8,7 +8,7 @@
     "deps": "cp node_modules/htmx.org/dist/htmx.min.js src && cp node_modules/tauri-plugin-htmx/tauri-plugin-htmx.js src && echo 'dependencies copied successfully!'"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^1.5.0"
+    "@tauri-apps/cli": "^1.5.6"
   },
   "dependencies": {
     "htmx.org": "^1.9.6",
