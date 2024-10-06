@@ -41,7 +41,11 @@ htmx plugin for Tauri
    +        <button hx-post="command:greet" hx-include="[name='name']" hx-trigger="click" hx-target="#greet-msg" hx-swap="innerHTML">Greet</button>
    +      </div>
    ```
-5. Modify `main.ts` or `main.js` removing everything and replacing it with just `htmx` and `tauri-plugin-htmx` imports.
+5. Add meta tag in `index.html`.
+   ```diff
+   +     <meta name="htmx-config" content='{"selfRequestsOnly":false}' />
+   ```
+6. Modify `main.ts` or `main.js` removing everything and replacing it with just `htmx` and `tauri-plugin-htmx` imports.
    ```typescript
    // main.ts
    import "htmx.org";
@@ -61,7 +65,7 @@ htmx plugin for Tauri
    import "./tauri-plugin-htmx.js";
    ```
    
-6. Run your Tauri app
+7. Run your Tauri app
    ```bash
    cargo tauri dev
    ```
