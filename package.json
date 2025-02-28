@@ -1,6 +1,6 @@
 {
   "name": "tauri-plugin-htmx",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "htmx plugin for Tauri",
   "main": "tauri-plugin-htmx.js",
   "repository": "https://github.com/roniemartinez/tauri-plugin-htmx",
