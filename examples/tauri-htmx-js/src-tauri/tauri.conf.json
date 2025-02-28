@@ -1,46 +1,33 @@
 {
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "tauri-htmx-js",
+  "version": "0.1.0",
+  "identifier": "sh.ron.tauri-htmx-js",
   "build": {
-    "beforeDevCommand": "",
-    "beforeBuildCommand": "",
-    "devPath": "../src",
-    "distDir": "../src",
-    "withGlobalTauri": true
+    "frontendDist": "../src"
   },
-  "package": {
-    "productName": "tauri-htmx-js",
-    "version": "0.0.0"
-  },
-  "tauri": {
-    "allowlist": {
-      "all": false,
-      "shell": {
-        "all": false,
-        "open": true
-      }
-    },
-    "bundle": {
-      "active": true,
-      "targets": "all",
-      "identifier": "sh.ron.tauri-htmx-js",
-      "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
-      ]
-    },
-    "security": {
-      "csp": null
-    },
+  "app": {
+    "withGlobalTauri": true,
     "windows": [
       {
-        "fullscreen": false,
-        "resizable": true,
         "title": "tauri-htmx-js",
         "width": 800,
         "height": 600
       }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
     ]
   }
 }
