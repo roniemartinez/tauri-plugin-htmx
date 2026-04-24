@@ -16,5 +16,14 @@ jobs:
         with:
           node-version: "22"
           registry-url: "https://registry.npmjs.org"
-      - run: npm install -g npm@11
+      - name: Verify version matches release tag
+        env:
+          TAG: ${{ github.event.release.tag_name }}
+        run: |
+          PKG_VERSION=$(node -p "require('./package.json').version")
+          if [ "$TAG" != "v$PKG_VERSION" ]; then
+            echo "::error::Release tag '$TAG' does not match package.json version 'v$PKG_VERSION'"
+            exit 1
+          fi
+      - run: npm install -g npm@11.5.1
       - run: npm publish --provenance --access public
