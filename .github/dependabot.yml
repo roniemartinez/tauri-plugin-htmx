@@ -1,0 +1,39 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+
+  - package-ecosystem: "npm"
+    directories:
+      - "/examples/tauri-htmx-ts"
+      - "/examples/tauri-htmx-js"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    groups:
+      tauri:
+        patterns:
+          - "@tauri-apps/*"
+          - "tauri-plugin-htmx"
+
+  - package-ecosystem: "cargo"
+    directories:
+      - "/examples/tauri-htmx-ts/src-tauri"
+      - "/examples/tauri-htmx-js/src-tauri"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+    groups:
+      tauri:
+        patterns:
+          - "tauri"
+          - "tauri-*"
