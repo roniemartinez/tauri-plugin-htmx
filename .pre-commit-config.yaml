@@ -1,0 +1,51 @@
+exclude: |
+  (?x)^(
+    examples/tauri-htmx-js/src/htmx\.min\.js|
+    examples/tauri-htmx-js/src/tauri-plugin-htmx\.js|
+    examples/[^/]+/yarn\.lock
+  )$
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-toml
+
+  - repo: https://github.com/rbubley/mirrors-prettier
+    rev: v3.9.9
+    hooks:
+      - id: prettier
+        types_or: [javascript, ts, html, css, json, markdown]
+
+  - repo: local
+    hooks:
+      - id: cargo-fmt-js
+        name: cargo fmt (tauri-htmx-js)
+        entry: cargo fmt --manifest-path examples/tauri-htmx-js/src-tauri/Cargo.toml --all --check
+        language: system
+        files: ^examples/tauri-htmx-js/src-tauri/.*\.rs$
+        pass_filenames: false
+
+      - id: cargo-fmt-ts
+        name: cargo fmt (tauri-htmx-ts)
+        entry: cargo fmt --manifest-path examples/tauri-htmx-ts/src-tauri/Cargo.toml --all --check
+        language: system
+        files: ^examples/tauri-htmx-ts/src-tauri/.*\.rs$
+        pass_filenames: false
+
+      - id: cargo-deny-js
+        name: cargo deny (tauri-htmx-js)
+        entry: cargo deny --manifest-path examples/tauri-htmx-js/src-tauri/Cargo.toml check --config deny.toml
+        language: system
+        files: ^(examples/tauri-htmx-js/src-tauri/Cargo\.(toml|lock)|deny\.toml)$
+        pass_filenames: false
+
+      - id: cargo-deny-ts
+        name: cargo deny (tauri-htmx-ts)
+        entry: cargo deny --manifest-path examples/tauri-htmx-ts/src-tauri/Cargo.toml check --config deny.toml
+        language: system
+        files: ^(examples/tauri-htmx-ts/src-tauri/Cargo\.(toml|lock)|deny\.toml)$
+        pass_filenames: false
