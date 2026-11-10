@@ -74,10 +74,10 @@
     "@tauri-apps/cli-win32-ia32-msvc" "2.12.4"
     "@tauri-apps/cli-win32-x64-msvc" "2.12.4"
 
-htmx.org@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/htmx.org/-/htmx.org-4.0.0.tgz#72323bd24261364fe3111803c46b80da1fb33445"
-  integrity sha512-T/171FUY93Kdfp8t+DnHdk45QvKRiBhVhhrwSzrXgUi4pHKvhp77dUA/qg8FAjsFWPIHNbmUuIdCrcVHuiZWng==
+htmx.org@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/htmx.org/-/htmx.org-4.0.1.tgz#db4f8322b8d61d5ae21b46011a0be835aaefb6f7"
+  integrity sha512-oF7JgXhDW9UXCy/k1ZYFUQgzu/rm19ORWPSPNL91vPluB2PB9+MV55tyQdH/w7o2EAbTYUG5SDW1R60mdkdqGg==
 
 tauri-plugin-htmx@^1.2.1:
   version "1.2.1"
